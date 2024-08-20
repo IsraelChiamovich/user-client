@@ -223,3 +223,4 @@ C:\Users\user\Desktop\idf kodcode\c#\week8\user-client\user-client\obj\Debug\net
 C:\Users\user\Desktop\idf kodcode\c#\week8\user-client\user-client\obj\Debug\net8.0\user-client.pdb
 C:\Users\user\Desktop\idf kodcode\c#\week8\user-client\user-client\obj\Debug\net8.0\user-client.genruntimeconfig.cache
 C:\Users\user\Desktop\idf kodcode\c#\week8\user-client\user-client\obj\Debug\net8.0\ref\user-client.dll
+C:\Users\user\Desktop\idf kodcode\c#\week8\user-client\user-client\obj\Debug\net8.0\user-client.sourcelink.json

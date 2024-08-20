@@ -1,4 +1,4 @@
-﻿@model user_client.ViewModel.UserVM
+﻿@model user_client.Dto.UserDto
 
 @{
     ViewData["Title"] = "Details";
@@ -10,39 +10,43 @@
     <h4>UserVM</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Id)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Id)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Name)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Name)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Email)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Email)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Password)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Password)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Image)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Image)
+        <dd class="col-sm-10">
+            @if (Model.Image != null)
+            {
+                <img style="width: 15rem;" class="friend-image"
+                     src="data:image/jpeg;base64,@Convert.ToBase64String(Model.Image)" />
+            }
         </dd>
     </dl>
 </div>
 <div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     <a asp-action="Index">Back to List</a>
 </div>
